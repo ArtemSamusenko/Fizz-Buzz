@@ -1,8 +1,3 @@
-for i in range(0,100):
-    output = ""
+print("\n".join((("fizz"*(i%3==0)+"buzz"*(i%5==0)) or str(i)) for i in range(1, 101)))
 
-    if i % 3 == 0:output += "Fizz"
-    if i % 5 == 0:output += "Buzz"
-    if output == "":output += str(i)
-
-    print(output)
+## this is so readable artem, confirm the pr!!
